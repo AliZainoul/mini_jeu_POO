@@ -15,12 +15,12 @@ var = gets.chomp
 player = HumanPlayer.new(var)
 array = []
 player1 = Player.new ("Josiane")
-print "#{player1}"
+puts "#{player1.name}"
 array << player1
 player2 = Player.new ("José")
-print "#{player2}"
+puts "#{player2.name}"
 array << player2
-puts array
+puts "#{array}"
 while player.life_points > 0 && (player1.life_points > 0 || player2.life_points > 0)
   puts player.show_state
   puts "Quelle action voulez-vous effectuer ?"
